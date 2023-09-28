@@ -18,7 +18,6 @@ LinkList CreateFromHead(){
             s->data=c;
             s->next=L->next;
             L->next=s;
-
         }
         else{
             flag=0;
@@ -29,8 +28,6 @@ LinkList CreateFromHead(){
 void Traverse(LinkList list){
     LinkList p=list->next;
     while(p){
-
-
         printf("%c",p->data);
         p=p->next;
     } 
