@@ -1,4 +1,4 @@
-// package java.project2;
+// package java.project3;
 
 import java.util.Scanner;
 
