@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>企业员工信息</title>
+	<link rel="stylesheet" href="./styles.css" type="text/css">
+</head>
+
+<body>
+	<div id="titleBox">
+		<h1 style="text-align: center">企业员工信息</h1>
+	</div>
+	<form id="mainBox" method="post">
+		<fieldset id="basic">
+			<legend>基本信息</legend>
+			姓名：
+			<input type="text" name="name" size="5" />
+			性别：
+			<input type="radio" name="sex" value="male" />
+			男
+			<input type="radio" name="sex" value="male" />
+			女
+			<input type="radio" name="sex" value="male" />
+			武装直升机
+			<br />
+			<br />
+			<label for="start">出生年月:</label>
+			<input type="month" id="start" name="start" min="2023-09" value="2023-09" />
+			<br />
+			<br />
+			学历
+			<select name="fruits">
+				<option value="" selected="selected">本科</option>
+				<option value="">初中及以下</option>
+				<option value="">高中</option>
+				<option value="">中专</option>
+				<option value="">大专</option>
+				<option value="">本科</option>
+				<option value="">硕士</option>
+			</select>
+			专业： <input type="text" name="name" / size="10">
+			<br />
+			<br />
+			邮箱：
+			<input type="email" id="email" pattern=".+@globex\.com" size="30" required />
+			<br />
+			手机：
+			<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+			<small>Format: 123-456-7890</small>
+			<br />
+			<br />
+			住址：
+			<input type="text" name="name" size="60" />
+
+			<br />
+			<br />
+		</fieldset>
+		<br />
+		<fieldset id="fav">
+			<legend>个人爱好</legend>
+			体育：<br />
+			<input type="checkbox" name="" />
+			足球
+			<input type="checkbox" name="" />
+			篮球
+			<input type="checkbox" name="" />
+			羽毛球
+			<input type="checkbox" name="" />
+			乒乓球
+			<br />
+			音乐：<br />
+			<input type="checkbox" name="" />
+			民谣
+			<input type="checkbox" name="" />
+			爵士
+			<input type="checkbox" name="" />
+			摇滚
+			<input type="checkbox" name="" />
+			说唱
+			<input type="checkbox" name="" />
+			乡村
+			<br />
+		</fieldset>
+		<br />
+
+		<fieldset id="others">
+			<legend>其他条件</legend>
+			阅读服务条款：
+			<br />
+			<textarea rows="10">
+			  请仔细阅读服务条款
+			  请仔细阅读服务条款
+			  请仔细阅读服务条款
+		  </textarea>
+			<br />
+			<br />
+			附件：
+			<input type="file" />
+		</fieldset>
+		<br />
+		<br />
+		<div style="text-align: center">
+			<input type="submit" value="提交" />
+			<input type="submit" value="重置" />
+			<input type="submit" value="提交" />
+		</div>
+	</form>
+</body>
+
+</html>
